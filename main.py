@@ -1,4 +1,5 @@
 import collections
+import webbrowser
 import win32evtlog
 
 
@@ -24,5 +25,7 @@ print(f"Event ID\tLevel\t\tOccurrences")
 for (event_id, level), count in most_common:
     level_name = {win32evtlog.EVENTLOG_ERROR_TYPE: 'Error', win32evtlog.EVENTLOG_WARNING_TYPE: 'Warning'}[level]
     print(f"{event_id} \t\t{level_name}\t\t{count}")
+    url = f"https://www.bing.com/search?q=Event+ID+{event_id}"
+    webbrowser.open_new_tab(url)
 
 win32evtlog.CloseEventLog(log_handle)
