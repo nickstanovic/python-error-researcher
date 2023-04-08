@@ -8,4 +8,4 @@ This script was originally written in PowerShell to help me research and diagnos
 Python 3.x Windows operating system (tested on Windows 11)
 
 ## Usage
-To run the script, open a terminal window and navigate to the directory containing the script. Then, run the following command: python main.py
+To run the script, open a terminal window and navigate to the directory containing the script. Then, run the following command: python windows_error_researcher.py
